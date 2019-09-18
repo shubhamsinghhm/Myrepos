@@ -3,6 +3,7 @@ package com.assignment.userdetails;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -11,7 +12,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @SpringBootApplication
-@DataJpaTest
 @ComponentScan(basePackages="com.assignment.userdetails")
 @EnableJpaRepositories(basePackages="com.assignment.userdetails.repository")
 @EntityScan(basePackages="com.assignment.userdetails.pojo")
