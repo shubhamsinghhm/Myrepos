@@ -1,26 +1,26 @@
 package com.assignment.userdetails.Pojo;
 
-import javax.persistence.Column;
+/*import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.Table;*/
 
-@Entity
-@Table(name="User")
+/*@Entity
+@Table(name="User")*/
 public class User {
 	
-	@Id
-	@Column(length=50)
+	//@Id
+	//@Column(length=50)
 	private String username;
-	@Column
+	//@Column
 	private String first_name;
-	@Column
+	//@Column
 	private String last_name;
-	@Column
+	//@Column
 	private int age;
-	@Column
+	//@Column
 	private String occupation;
-	@Column
+	//@Column
 	private String address;
 	
 	
