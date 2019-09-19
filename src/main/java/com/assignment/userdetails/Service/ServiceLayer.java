@@ -13,8 +13,8 @@ public class ServiceLayer {
 	UserRepository repositoryLayer;
 
 	public void save(User user) {
-		repositoryLayer.saveAndFlush( user);
-		
+		//repositoryLayer.saveAndFlush( user);
+		repositoryLayer.save(user);
 	}
 
 	public User getByName(String username) {
